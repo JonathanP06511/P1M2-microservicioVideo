@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoElement = document.getElementById('myVideo');
     const videoSource = document.getElementById('videoSource');
   
-    fetch('http://localhost:3000/api/video')
+    fetch('/api/video')
       .then(response => {
         if (!response.ok) {
           throw new Error('Error al cargar el video');
