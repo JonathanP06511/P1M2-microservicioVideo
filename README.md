@@ -1,5 +1,5 @@
 # Online CoffeeShop - Microservice for Serving Video
-![Imagen de la portada](/videos/p2.jpg)
+![cover image](/videos/p2.jpg)
 
 Members: Jonathan Chasipanta - Gonzalo Guachamin
 
@@ -14,7 +14,7 @@ This project is a Node.js and Express microservice that serves a video from a lo
 
 1. Clone this repository:
     ```bash
-    git clone 
+    git clone https://github.com/JonathanP06511/P1M2-microservicioVideo.git
     ```
 
 2. Install dependencies:
