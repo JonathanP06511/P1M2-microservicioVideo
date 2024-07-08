@@ -1,55 +1,57 @@
-# Microservicio para Servir Videos
+# Online CoffeeShop - Microservice for Serving Video
+![Imagen de la portada](/videos/p2.jpg)
 
-Integrantes: Jonathan Chasipanta
-             Gonzalo Guachamin  
+Members: Jonathan Chasipanta - Gonzalo Guachamin
 
-Este proyecto es un microservicio desarrollado con Node.js y Express que sirve videos almacenados localmente y una interfaz frontend para reproducir el video.
+This project is a Node.js and Express microservice that serves a video from a local directory, along with a user interface.
 
-## Requisitos
+## Requirements
 
-- Node.js
-- Docker (opcional, para despliegue con contenedor)
+- Node v20.13.1
+- Docker version 26.0.0 
 
-## Instalación
+## Installation
 
-1. Clona este repositorio:
+1. Clone this repository:
     ```bash
-    git clone https://github.com/tu_usuario/tu_repositorio.git
-    cd tu_repositorio
+    git clone 
     ```
 
-2. Instala las dependencias:
+2. Install dependencies:
     ```bash
     npm install
     ```
 
-3. Crea los directorios `frontend` y `videos` en la raíz del proyecto y coloca tus archivos de frontend y videos en estos directorios respectivamente.
+## Usage
 
-## Uso
-
-1. Inicia el servidor:
+1. Start the server:
     ```bash
-    node server.js
+    npm start
+    ```
+     ```bash
+      node server.js
     ```
 
-2. Abre tu navegador y navega a `http://localhost:3000` para ver la interfaz de frontend y reproducir el video.
+2. Open your browser and navigate to http://localhost:3001 to view the frontend interface.
+## Docker Usage
 
-## Uso con Docker
-
-1. Construye la imagen Docker:
+1. Build the Docker image:
     ```bash
-    docker build -t video-service .
+    docker build -t image-name .
     ```
 
-2. Inicia un contenedor con la imagen creada:
+2. Run a container using the created image:
     ```bash
-    docker run -p 3000:3000 -v $(pwd)/frontend:/app/frontend -v $(pwd)/videos:/app/videos video-service
+    docker run -p 8080:3001 -d --name container_name image_name
     ```
 
-3. Abre tu navegador y navega a `http://localhost:3000` para ver la interfaz de frontend y reproducir el video.
+3. Open your browser and navigate to http://localhost:8080 to view the frontend interface.
 
 ## Endpoints
 
-- `GET /api/video`: Sirve un video estático ubicado en el directorio `videos`.
+- `GET /api/video`: Serves the video
+- `GET /`: Loads the frontend.
+
+
 
 
